@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Illuminated Path Prototype</title>
+  <style>
+    /* --- GLOBAL --- */
+    body {
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* --- BOARD LAYOUT --- */
+    #board {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      opacity: 0.1; /* start dark */
+      transition: opacity 0.8s ease;
+    }
+
+    .row.illuminated {
+      opacity: 1;
+    }
+
+    /* --- TILE STYLING --- */
+    .tile {
+      width: 80px;
+      height: 80px;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 6px;
+      box-shadow: 0 0 8px #000;
+      cursor: pointer;
+      transition: background 0.3s, box-shadow 0.3s, transform 0.1s;
+    }
+
+    .row.illuminated .tile:hover {
+      background: #333;
+      box-shadow: 0 0 12px #fff2;
+      transform: scale(1.05);
+    }
+
+    .tile.clicked {
+      background: #ffc107;
+      box-shadow: 0 0 15px #ffc107;
+      cursor: default;
+    }
+
+    .completed {
+      outline: 2px solid #ffc107;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="board">
+    <div class="row">
+      <div class="tile" data-row="1"></div>
+      <div class="tile" data-row="1"></div>
+      <div class="tile" data-row="1"></div>
+    </div>
+    <div class="row">
+      <div class="tile" data-row="2"></div>
+      <div class="tile" data-row="2"></div>
+      <div class="tile" data-row="2"></div>
+    </div>
+    <div class="row">
+      <div class="tile" data-row="3"></div>
+      <div class="tile" data-row="3"></div>
+      <div class="tile" data-row="3"></div>
+    </div>
+  </div>
+
+  <script>
+    const rows = document.querySelectorAll('.row');
+    let currentRow = 0;
+
+    function illuminateRow(index) {
+      rows[index].classList.add('illuminated');
+    }
+
+    function checkRowCompletion(index) {
+      const tiles = rows[index].querySelectorAll('.tile');
+      const allClicked = [...tiles].every(tile => tile.classList.contains('clicked'));
+      if (allClicked && index + 1 < rows.length) {
+        rows[index].classList.add('completed');
+        illuminateRow(index + 1);
+        currentRow++;
+      } else if (allClicked && index + 1 === rows.length) {
+        rows[index].classList.add('completed');
+        document.body.style.background = 'radial-gradient(circle, #222 10%, #000 80%)';
+        alert("✨ You've reached the conclusion!");
+      }
+    }
+
+    // Illuminate the first row initially
+    illuminateRow(currentRow);
+
+    document.querySelectorAll('.tile').forEach(tile => {
+      tile.addEventListener('click', e => {
+        const rowEl = tile.closest('.row');
+        if (
+          !tile.classList.contains('clicked') &&
+          rowEl.classList.contains('illuminated')
+        ) {
+          tile.classList.add('clicked');
+          checkRowCompletion(parseInt(tile.dataset.row) - 1);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
