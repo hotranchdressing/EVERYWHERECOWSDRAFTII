@@ -151,9 +151,6 @@ font-style: normal;
     width: 100%;
   }
 
-  .nav-hint {
-    text-align: left;
-  }
 }
 
 @media (max-width: 768px) {

@@ -4,7 +4,7 @@ const sceneConfigs = [
     id: 1,
     name: "Cosmetics",
     viewportBackground: 'images/backgrounds/background1.jpg',
-    outerBackground: '#ffffff',
+    outerBackground: '#fcfeff',
     products: [
       { 
         x: -8, y: 6, 
@@ -154,8 +154,8 @@ const sceneConfigs = [
   },{
     id: 2,
     name: "Construction",
-    viewportBackground: 'images/backgrounds/background1.jpg',
-    outerBackground: '#ffffff',
+    viewportBackground: 'images/backgrounds/background2.jpg',
+    outerBackground: '#fcfeff',
     products: [
       { 
         x: -8, y: 6, 
@@ -298,22 +298,22 @@ const sceneConfigs = [
   {
     id: 3,
     name: "Agriculture",
-    viewportBackground: 'images/backgrounds/background1.jpg',
-    outerBackground: '#ffffff',
+    viewportBackground: 'images/backgrounds/background3.jpg',
+    outerBackground: '#fcfeff',
     products: [
       { 
         x: -8, y: 6, 
         imageWidth: 500,
-        imageHeight: 1000,
-        scale: 1.2,
+        imageHeight: 500,
+        scale: 8,
         imageUrl: 'images/agriculture/balingtwine.png',
         maskUrl: 'images/agriculture/balingtwinemask.png'
       },
       { 
-        x: 0, y: 3, 
+        x: -12, y: 2, 
         imageWidth: 600,
-        imageHeight: 1000,
-        scale: 1.5,
+        imageHeight: 600,
+        scale: 8,
         imageUrl: 'images/agriculture/bloodmealpoultryfeed.png',
         maskUrl: 'images/agriculture/bloodmealpoultryfeedmask.png'
       },
@@ -328,8 +328,8 @@ const sceneConfigs = [
       { 
         x: -3, y: -1, 
         imageWidth: 600,
-        imageHeight: 500,
-        scale: 1.2,
+        imageHeight: 600,
+        scale: 15,
         imageUrl: 'images/agriculture/herbicide.png',
         maskUrl: 'images/agriculture/herbicidemask.png'
       },
@@ -337,74 +337,177 @@ const sceneConfigs = [
         x: 3, y: -2, 
         imageWidth: 800,
         imageHeight: 600,
-        scale: 1.4,
+        scale: 15,
         imageUrl: 'images/agriculture/hydroponicsgrowingmediabinder.png',
         maskUrl: 'images/agriculture/hydroponicsgrowingmediabindermask.png'
       },
       { 
-        x: -7, y: 4, 
+        x: 10, y: 4, 
         imageWidth: 400,
-        imageHeight: 800,
-        scale: 1.1,
+        imageHeight: 600,
+        scale: 3,
         imageUrl: 'images/agriculture/irrigationdriptape.png',
         maskUrl: 'images/agriculture/irrigationdriptapemask.png'
       },
       { 
-        x: -8, y: -2, 
+        x: 8, y: -4, 
         imageWidth: 800,
-        imageHeight: 1000,
-        scale: 1.3,
+        imageHeight: 800,
+        scale: 10,
         imageUrl: 'images/agriculture/minerallick.png',
         maskUrl: 'images/agriculture/minerallickmask.png'
       },
       { 
         x: 8, y: 1, 
         imageWidth: 400,
-        imageHeight: 650,
-        scale: 1.2,
+        imageHeight: 400,
+        scale: 12,
         imageUrl: 'images/agriculture/mulchfilm.png',
         maskUrl: 'images/agriculture/mulchfilmmask.png'
       },
       { 
         x: -3, y: 3, 
         imageWidth: 300,
-        imageHeight: 900,
-        scale: 1.1,
+        imageHeight: 350,
+        scale: 8,
         imageUrl: 'images/agriculture/organicbonemealfertilizer.png',
         maskUrl: 'images/agriculture/organicbonemealfertilizermask.png'
       },
       { 
         x: 3, y: 6, 
         imageWidth: 900,
-        imageHeight: 1000,
-        scale: 1.4,
+        imageHeight: 900,
+        scale: 9,
         imageUrl: 'images/agriculture/seedcoating.png',
         maskUrl: 'images/agriculture/seedcoatingmask.png'
       },
       { 
-        x: 6, y: 6, 
-        imageWidth: 300,
+        x: 0, y: -4, 
+        imageWidth: 600,
         imageHeight: 600,
-        scale: 1.1,
+        scale: 10,
         imageUrl: 'images/agriculture/treeguard.png',
         maskUrl: 'images/agriculture/treeguardmask.png'
       },
       { 
-        x: -2, y: 7, 
+        x: 13, y: 7, 
         imageWidth: 700,
-        imageHeight: 1000,
+        imageHeight: 700,
+        scale: 8,
+        imageUrl: 'images/agriculture/treewound.png',
+        maskUrl: 'images/agriculture/treewoundmask.png'
+      },
+    ]
+  },
+{
+    id: 4,
+    name: "Fuel",
+    viewportBackground: 'images/backgrounds/background4.jpg',
+    outerBackground: '#fffcfcd7',
+    products: [
+      { 
+        x: -8, y: 6, 
+        imageWidth: 500,
+        imageHeight: 500,
+        scale: 8,
+        imageUrl: 'images/agriculture/balingtwine.png',
+        maskUrl: 'images/agriculture/balingtwinemask.png'
+      },
+      { 
+        x: -12, y: 2, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 8,
+        imageUrl: 'images/agriculture/bloodmealpoultryfeed.png',
+        maskUrl: 'images/agriculture/bloodmealpoultryfeedmask.png'
+      },
+      { 
+        x: -5, y: 1, 
+        imageWidth: 800,
+        imageHeight: 700,
         scale: 1.3,
+        imageUrl: 'images/agriculture/greenhouseglazing.png',
+        maskUrl: 'images/agriculture/greenhouseglazingmask.png'
+      },
+      { 
+        x: -3, y: -1, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 15,
+        imageUrl: 'images/agriculture/herbicide.png',
+        maskUrl: 'images/agriculture/herbicidemask.png'
+      },
+      { 
+        x: 3, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 15,
+        imageUrl: 'images/agriculture/hydroponicsgrowingmediabinder.png',
+        maskUrl: 'images/agriculture/hydroponicsgrowingmediabindermask.png'
+      },
+      { 
+        x: 10, y: 4, 
+        imageWidth: 400,
+        imageHeight: 600,
+        scale: 3,
+        imageUrl: 'images/agriculture/irrigationdriptape.png',
+        maskUrl: 'images/agriculture/irrigationdriptapemask.png'
+      },
+      { 
+        x: 8, y: -4, 
+        imageWidth: 800,
+        imageHeight: 800,
+        scale: 10,
+        imageUrl: 'images/agriculture/minerallick.png',
+        maskUrl: 'images/agriculture/minerallickmask.png'
+      },
+      { 
+        x: 8, y: 1, 
+        imageWidth: 400,
+        imageHeight: 400,
+        scale: 12,
+        imageUrl: 'images/agriculture/mulchfilm.png',
+        maskUrl: 'images/agriculture/mulchfilmmask.png'
+      },
+      { 
+        x: -3, y: 3, 
+        imageWidth: 300,
+        imageHeight: 350,
+        scale: 8,
+        imageUrl: 'images/agriculture/organicbonemealfertilizer.png',
+        maskUrl: 'images/agriculture/organicbonemealfertilizermask.png'
+      },
+      { 
+        x: 3, y: 6, 
+        imageWidth: 900,
+        imageHeight: 900,
+        scale: 9,
+        imageUrl: 'images/agriculture/seedcoating.png',
+        maskUrl: 'images/agriculture/seedcoatingmask.png'
+      },
+      { 
+        x: 0, y: -4, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 10,
+        imageUrl: 'images/agriculture/treeguard.png',
+        maskUrl: 'images/agriculture/treeguardmask.png'
+      },
+      { 
+        x: 13, y: 7, 
+        imageWidth: 700,
+        imageHeight: 700,
+        scale: 8,
         imageUrl: 'images/agriculture/treewound.png',
         maskUrl: 'images/agriculture/treewoundmask.png'
       },
     ]
   }
-
 ];
 
 // State management
 let scene, camera, renderer, ballMesh, ballBody;
-let currentSceneIndex = 0;
+let currentSceneIndex = 1;
 let scrollLocked = true;
 let ballTouchedBottom = false;
 let lastScrollTime = 0;
@@ -465,7 +568,7 @@ renderer.domElement.addEventListener('mouseleave', onMouseUp);
   initProgressMap();
 
   // Load first scene
-  loadScene(0);
+  loadScene(2);
 
   // Start animation loop
   animate();
