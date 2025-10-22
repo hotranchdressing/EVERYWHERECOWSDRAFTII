@@ -641,7 +641,94 @@ const sceneConfigs = [
       },
     
     ]
-  }
+  },
+  {
+    id: 6,
+    name: "6",
+    viewportBackground: 'images/backgrounds/background6.jpg',
+    outerBackground: '#717171',
+    products: [
+    ]},
+
+      {
+    id: 6,
+    name: "7",
+    viewportBackground: 'images/backgrounds/background7.jpg',
+    outerBackground: '#717171',
+    products: [
+    ]},
+
+      {
+    id: 8,
+    name: "8",
+    viewportBackground: 'images/backgrounds/background8.jpg',
+    outerBackground: '#595959',
+    products: [
+    ]},
+
+    {
+    id: 9,
+    name: "9",
+    viewportBackground: 'images/backgrounds/background9.jpg',
+    outerBackground: '#595959',
+    products: [
+    ]},
+
+    {
+    id: 10,
+    name: "10",
+    viewportBackground: 'images/backgrounds/background10.jpg',
+    outerBackground: '#595959',
+    products: [
+    ]},
+
+   {
+    id: 11,
+    name: "11",
+    viewportBackground: 'images/backgrounds/background11.jpg',
+    outerBackground: '#414141',
+    products: [
+    ]},
+
+    {
+    id: 12,
+    name: "12",
+    viewportBackground: 'images/backgrounds/background12.jpg',
+    outerBackground: '#414141',
+    products: [
+    ]},
+
+    {
+    id: 13,
+    name: "13",
+    viewportBackground: 'images/backgrounds/background13.jpg',
+    outerBackground: '#1f0000',
+    products: [
+    ]},
+
+    {
+    id: 14,
+    name: "14",
+    viewportBackground: 'images/backgrounds/background14.jpg',
+    outerBackground: '#1f0000',
+    products: [
+    ]},
+
+    {
+    id: 15,
+    name: "15",
+    viewportBackground: 'images/backgrounds/background15.jpg',
+    outerBackground: '#000000',
+    products: [
+    ]},
+
+    {
+    id: 16,
+    name: "16",
+    viewportBackground: 'images/backgrounds/background16.jpg',
+    outerBackground: '#000000',
+    products: [
+    ]},
 ];
 
 // State management
@@ -800,9 +887,9 @@ if (sceneConfig.viewportBackground || sceneConfig.outerBackground) {
   const ballRadius = 0.5;
   const ballGeometry = new THREE.SphereGeometry(ballRadius, 32, 32);
   const ballMaterial = new THREE.MeshStandardMaterial({
-    color: 0xff6b35,
-    metalness: 0.6,
-    roughness: 0.4,
+    color: '#bf2b2b',
+    metalness: 0.3,
+    roughness: 0.8,
   });
   ballMesh = new THREE.Mesh(ballGeometry, ballMaterial);
   ballMesh.castShadow = true;
