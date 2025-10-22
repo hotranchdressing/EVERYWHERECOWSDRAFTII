@@ -298,7 +298,7 @@ const sceneConfigs = [
     id: 3,
     name: "Agriculture",
     viewportBackground: 'images/backgrounds/background3.jpg',
-    outerBackground: '#dbdbdb',
+    outerBackground: '#fcfeff',
     products: [
       { 
         x: -8, y: 6, 
@@ -415,7 +415,7 @@ const sceneConfigs = [
     id: 4,
     name: "Fuel",
     viewportBackground: 'images/backgrounds/background4.jpg',
-    outerBackground: '#b0b0b0',
+    outerBackground: '#fcfeff',
     products: [
       { 
         x: 0, y: 6, 
@@ -487,7 +487,7 @@ const sceneConfigs = [
     id: 5,
     name: "Plastic",
     viewportBackground: 'images/backgrounds/background5.jpg',
-    outerBackground: '#b0b0b0',
+    outerBackground: '#fcfeff',
     products: [
       { 
         x: 0, y: 6, 
@@ -595,7 +595,7 @@ const sceneConfigs = [
     id: 5,
     name: "Pharma",
     viewportBackground: 'images/backgrounds/background6.jpg',
-    outerBackground: '#909090',
+    outerBackground: '#fcfeff',
     products: [
       { 
         x: 0, y: 6, 
@@ -685,7 +685,7 @@ const sceneConfigs = [
     id: 6,
     name: "6",
     viewportBackground: 'images/backgrounds/background6.jpg',
-    outerBackground: '#717171',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -693,7 +693,7 @@ const sceneConfigs = [
     id: 6,
     name: "7",
     viewportBackground: 'images/backgrounds/background7.jpg',
-    outerBackground: '#717171',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -701,7 +701,7 @@ const sceneConfigs = [
     id: 8,
     name: "8",
     viewportBackground: 'images/backgrounds/background8.jpg',
-    outerBackground: '#595959',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -709,7 +709,7 @@ const sceneConfigs = [
     id: 9,
     name: "9",
     viewportBackground: 'images/backgrounds/background9.jpg',
-    outerBackground: '#595959',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -717,7 +717,7 @@ const sceneConfigs = [
     id: 10,
     name: "10",
     viewportBackground: 'images/backgrounds/background10.jpg',
-    outerBackground: '#595959',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -725,7 +725,7 @@ const sceneConfigs = [
     id: 11,
     name: "11",
     viewportBackground: 'images/backgrounds/background11.jpg',
-    outerBackground: '#414141',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -733,7 +733,7 @@ const sceneConfigs = [
     id: 12,
     name: "12",
     viewportBackground: 'images/backgrounds/background12.jpg',
-    outerBackground: '#414141',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -741,7 +741,7 @@ const sceneConfigs = [
     id: 13,
     name: "13",
     viewportBackground: 'images/backgrounds/background13.jpg',
-    outerBackground: '#1f0000',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -749,7 +749,7 @@ const sceneConfigs = [
     id: 14,
     name: "14",
     viewportBackground: 'images/backgrounds/background14.jpg',
-    outerBackground: '#1f0000',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -757,7 +757,7 @@ const sceneConfigs = [
     id: 15,
     name: "15",
     viewportBackground: 'images/backgrounds/background15.jpg',
-    outerBackground: '#000000',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 
@@ -765,7 +765,7 @@ const sceneConfigs = [
     id: 16,
     name: "16",
     viewportBackground: 'images/backgrounds/background16.jpg',
-    outerBackground: '#000000',
+    outerBackground: '#fcfeff',
     products: [
     ]},
 ];
@@ -1253,3 +1253,37 @@ function onMouseUp(event) {
   }
 }
 
+// Start a 2-minute timer
+setTimeout(() => {
+  console.log("2 minutes elapsed — activating chute experience");
+
+  // Fade out main container
+  const main = document.querySelector("#main-container");
+  main.style.transition = "opacity 2s ease";
+  main.style.opacity = 0;
+
+  setTimeout(() => {
+    main.style.display = "none"; // hide main scene
+    const chuteScene = document.getElementById("chute-scene");
+    chuteScene.style.display = "block"; // make chute visible
+    startChuteExperience(); // start chute experience
+  }, 2000); // wait for fade
+}, 120000); // 2 minutes
+
+// Create a 2-minute visible countdown timer
+let timeLeft = 120; // seconds
+const timerDisplay = document.getElementById("countdown-timer");
+
+const countdownInterval = setInterval(() => {
+  timeLeft--;
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+  timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+  // when timer hits 0 → stop and trigger chute
+  if (timeLeft <= 0) {
+    clearInterval(countdownInterval);
+    timerDisplay.style.display = "none"; // hide the timer
+    startChuteExperience(); // your existing chute trigger
+  }
+}, 1000);
