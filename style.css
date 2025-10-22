@@ -28,7 +28,7 @@ color: #ad2424;
   justify-content: center;
   font-family: calvino, sans-serif;
 font-weight: 700;
-color: #ad2424;
+color: black;
 font-size: 30px !important;
 }
 
@@ -153,7 +153,7 @@ font-size: 30px !important;
 
 #product-text {
   font-size: 14px;
-  color: black;
+  color: '#ad2424';
   font-weight: 500;
   font-family: calvino, sans-serif;
 font-weight: 400;
