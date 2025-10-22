@@ -3,12 +3,15 @@ const sceneConfigs = [
   {
     id: 1,
     name: "Cosmetics",
+    viewportBackground: 'images/backgrounds/background1.jpg',
+    outerBackground: '#ffffff',
     products: [
       { 
         x: -8, y: 6, 
         imageWidth: 500,
         imageHeight: 1000,
-        scale: 1.2,
+        scale: 2.4,
+        productName: "Bath Oils: Oleic Acid",
         imageUrl: 'images/cosmetics/bathoil.png',
         maskUrl: 'images/cosmetics/bathoilmask.png'
       },
@@ -16,7 +19,8 @@ const sceneConfigs = [
         x: 0, y: 3, 
         imageWidth: 600,
         imageHeight: 1000,
-        scale: 1.5,
+        scale: 3,
+        productName: "Collagen Shampoo: Collagen",
         imageUrl: 'images/cosmetics/collagenshampoo.png',
         maskUrl: 'images/cosmetics/collagenshampoomask.png'
       },
@@ -24,7 +28,8 @@ const sceneConfigs = [
         x: -5, y: 1, 
         imageWidth: 800,
         imageHeight: 700,
-        scale: 1.3,
+        scale: 2.6,
+        productName: "Cuticle Cream: Tallow Derivatives",
         imageUrl: 'images/cosmetics/cuticle.png',
         maskUrl: 'images/cosmetics/cuticlemask.png'
       },
@@ -32,7 +37,8 @@ const sceneConfigs = [
         x: -3, y: -1, 
         imageWidth: 600,
         imageHeight: 500,
-        scale: 1.2,
+        scale: 2.4,
+        productName: "Deodorant: Stearyl Alcohol",
         imageUrl: 'images/cosmetics/deo.png',
         maskUrl: 'images/cosmetics/deomask.png'
       },
@@ -40,7 +46,8 @@ const sceneConfigs = [
         x: 3, y: -2, 
         imageWidth: 800,
         imageHeight: 600,
-        scale: 1.4,
+        scale: 2.8,
+        productName: "Bath Oils: Tallow, Oleic Acid",
         imageUrl: 'images/cosmetics/exfoliate.png',
         maskUrl: 'images/cosmetics/exfoliatemask.png'
       },
@@ -48,7 +55,8 @@ const sceneConfigs = [
         x: -7, y: 4, 
         imageWidth: 400,
         imageHeight: 800,
-        scale: 1.1,
+        scale: 2.2,
+        productName: "Foundation Makeup: Tallow Glycerides",
         imageUrl: 'images/cosmetics/foundation.png',
         maskUrl: 'images/cosmetics/foundationmask.png'
       },
@@ -56,7 +64,8 @@ const sceneConfigs = [
         x: -8, y: -2, 
         imageWidth: 800,
         imageHeight: 1000,
-        scale: 1.3,
+        scale: 2.6,
+        productName: "Hair Gel: Stearic Acid",
         imageUrl: 'images/cosmetics/hairgel.png',
         maskUrl: 'images/cosmetics/hairgelmask.png'
       },
@@ -64,7 +73,8 @@ const sceneConfigs = [
         x: 8, y: 1, 
         imageWidth: 400,
         imageHeight: 650,
-        scale: 1.2,
+        scale: 2.4,
+        productName: "Hand Sanitizer: Glycerin",
         imageUrl: 'images/cosmetics/handsani.png',
         maskUrl: 'images/cosmetics/handsanimask.png'
       },
@@ -72,7 +82,8 @@ const sceneConfigs = [
         x: -3, y: 3, 
         imageWidth: 300,
         imageHeight: 900,
-        scale: 1.1,
+        scale: 2.2,
+        productName: "Lipstick: Oleic Acid, Glycerin",
         imageUrl: 'images/cosmetics/lipstick.png',
         maskUrl: 'images/cosmetics/lipstickmask.png'
       },
@@ -80,7 +91,8 @@ const sceneConfigs = [
         x: 3, y: 6, 
         imageWidth: 900,
         imageHeight: 1000,
-        scale: 1.4,
+        scale: 2.8,
+        productName: "Liquid Hand Soap: Tallow Fatty Acids",
         imageUrl: 'images/cosmetics/liquidsoap.png',
         maskUrl: 'images/cosmetics/liquidsoapmask.png'
       },
@@ -88,7 +100,8 @@ const sceneConfigs = [
         x: 6, y: 6, 
         imageWidth: 300,
         imageHeight: 600,
-        scale: 1.1,
+        scale: 2.2,
+        productName: "Mascara: Stearic Acid",
         imageUrl: 'images/cosmetics/mascara.png',
         maskUrl: 'images/cosmetics/mascaramask.png'
       },
@@ -96,7 +109,8 @@ const sceneConfigs = [
         x: -2, y: 7, 
         imageWidth: 700,
         imageHeight: 1000,
-        scale: 1.3,
+        scale: 2.6,
+        productName: "Moisturizer: Glycerin, Oleic Acid, Collagen",
         imageUrl: 'images/cosmetics/moist.png',
         maskUrl: 'images/cosmetics/moistmask.png'
       },
@@ -104,7 +118,8 @@ const sceneConfigs = [
         x: -5, y: 3, 
         imageWidth: 400,
         imageHeight: 550,
-        scale: 1.2,
+        scale: 2.4,
+        productName: "Nail Polish: Stearic Acid",
         imageUrl: 'images/cosmetics/nailpolish.png',
         maskUrl: 'images/cosmetics/nailpolishmask.png'
       },
@@ -112,7 +127,8 @@ const sceneConfigs = [
         x: 3, y: 1.5, 
         imageWidth: 600,
         imageHeight: 800,
-        scale: 1.3,
+        scale: 2.6,
+        productName: "Perfume: Tallow Alcohols",
         imageUrl: 'images/cosmetics/perfume.png',
         maskUrl: 'images/cosmetics/perfumemask.png'
       },
@@ -120,7 +136,8 @@ const sceneConfigs = [
         x: 0, y: -5, 
         imageWidth: 600,
         imageHeight: 1400,
-        scale: 1.3,
+        scale: 2.6,
+        productName: "Shaving Cream: Stearic Acid",
         imageUrl: 'images/cosmetics/shavingcream.png',
         maskUrl: 'images/cosmetics/shavingcreammask.png'
       },
@@ -128,7 +145,8 @@ const sceneConfigs = [
         x: -7, y: -6, 
         imageWidth: 400,
         imageHeight: 800,
-        scale: 1.2,
+        scale: 2.4,
+        productName: "Bar Soap: Sodium Tallowate",
         imageUrl: 'images/cosmetics/soap.png',
         maskUrl: 'images/cosmetics/soapmask.png'
       },
@@ -136,6 +154,8 @@ const sceneConfigs = [
   },{
     id: 2,
     name: "Construction",
+    viewportBackground: 'images/backgrounds/background1.jpg',
+    outerBackground: '#ffffff',
     products: [
       { 
         x: -8, y: 6, 
@@ -278,6 +298,8 @@ const sceneConfigs = [
   {
     id: 3,
     name: "Agriculture",
+    viewportBackground: 'images/backgrounds/background1.jpg',
+    outerBackground: '#ffffff',
     products: [
       { 
         x: -8, y: 6, 
@@ -389,6 +411,20 @@ let lastScrollTime = 0;
 const SCROLL_COOLDOWN = 500;
 const GROUND_Y = -10;
 
+function updateBackground(viewportBg, outerBg) {
+  // Update viewport (canvas container)
+  const container = document.getElementById('canvas-container');
+  if (container && viewportBg) {
+    container.style.backgroundImage = `url('${viewportBg}')`;
+  }
+  
+  // Update outer frame
+  const outerFrame = document.querySelector('.outer-frame');
+  if (outerFrame && outerBg) {
+    outerFrame.style.backgroundImage = `url('${outerBg}')`;
+  }
+}
+
 function initScene() {
   const container = document.getElementById('canvas-container');
   const width = container.clientWidth;
@@ -440,6 +476,7 @@ renderer.domElement.addEventListener('mouseleave', onMouseUp);
 
 function initProgressMap() {
   const progressMap = document.getElementById('progress-map');
+  if (!progressMap) return;
   progressMap.innerHTML = '';
   
   for (let i = 0; i < sceneConfigs.length; i++) {
@@ -462,8 +499,20 @@ function updateProgressMap(index) {
       dot.classList.add('visited');
     }
   });
+  
+    const sceneCounter = document.getElementById('current-scene');
+  if (sceneCounter) { // ADD THIS CHECK
+    sceneCounter.textContent = index + 1;
+  }
 
   document.getElementById('current-scene').textContent = index + 1;
+}
+
+function updateSceneTracker(index) {
+  const trackerImg = document.getElementById('scene-tracker-img');
+  if (trackerImg) {
+    trackerImg.src = `images/maps/map${index + 1}.png`;
+  }
 }
 
 function loadScene(index) {
@@ -481,6 +530,9 @@ function loadScene(index) {
   scene.children = scene.children.filter(child => child instanceof THREE.Light);
 
   const sceneConfig = sceneConfigs[index];
+
+    // Update background
+ updateBackground(sceneConfig.viewportBackground, sceneConfig.outerBackground);
 
   // Create ball
   const ballRadius = 0.5;
@@ -550,6 +602,7 @@ textureLoader.load(product.imageUrl, (texture) => {
           y: product.y,
           w: w,
           h: h,
+          productName: product.productName,
           pixelData: imageData.data,
           width: canvas.width,
           height: canvas.height,
@@ -562,8 +615,8 @@ textureLoader.load(product.imageUrl, (texture) => {
   window.productCollisionData = productCollisionData;
 
   updateProgressMap(index);
-  updateProductInfo(`Scene ${index + 1}: ${sceneConfig.name}`);
-  updateScrollHint();
+  updateProductInfo(``);
+  updateSceneTracker(index);
 }
 
 function jumpToScene(index) {
@@ -572,53 +625,23 @@ function jumpToScene(index) {
   }
 }
 
-function setupScrollListener() {
-  window.addEventListener('wheel', (e) => {
-    if (scrollLocked) {
-      e.preventDefault();
-      return;
-    }
-
-    const now = Date.now();
-    if (now - lastScrollTime < SCROLL_COOLDOWN) return;
-
-    lastScrollTime = now;
-    if (currentSceneIndex < sceneConfigs.length - 1) {
-      loadScene(currentSceneIndex + 1);
-    }
-  }, { passive: false });
-}
-
 function updateProductInfo(text) {
   const el = document.getElementById('product-text');
   if (el) el.textContent = text;
 }
 
-function updateScrollHint() {
-  const hint = document.getElementById('scroll-hint');
-  if (!hint) return;
 
-  if (currentSceneIndex >= sceneConfigs.length - 1) {
-    hint.textContent = 'End of sequence';
-    hint.classList.remove('locked', 'unlocked');
-  } else if (scrollLocked) {
-    hint.textContent = 'Scroll to continue';
-    hint.classList.remove('unlocked');
-    hint.classList.add('locked');
-  } else {
-    hint.textContent = '✓ Ready to scroll';
-    hint.classList.remove('locked');
-    hint.classList.add('unlocked');
-  }
-}
 
 function animate() {
   requestAnimationFrame(animate);
 
   if (!ballBody) return;
 
-  const gravity = 15;
-  const friction = 0.99;
+ const sceneProgress = currentSceneIndex / (sceneConfigs.length - 1); // 0 to 1
+
+  const gravity = 15 + (sceneProgress * 10); // 15 → 25 gravity
+  const friction = 0.99 - (sceneProgress * 0.05); // 0.99 → 0.94 friction
+  const bounceDamping = 0.7 - (sceneProgress * 0.2); // 0.7 → 0.5 bounce reduction
 
   ballBody.vy -= gravity * 0.016;
   ballBody.vx *= friction;
@@ -637,15 +660,20 @@ function animate() {
         ballBody.vy = bounced.vy;
         ballBody.x += ballBody.vx * 0.016;
         ballBody.y += ballBody.vy * 0.016;
+
+         if (collisionData.productName) {
+        updateProductInfo(collisionData.productName);
       }
+    }
     });
   }
 
+
 // Ground collision
-if (ballBody.y - ballBody.radius < GROUND_Y) {
-  ballBody.y = GROUND_Y + ballBody.radius;
-  ballBody.vy *= -0.7;
-  ballBody.vx *= 0.95;
+  if (ballBody.y - ballBody.radius < GROUND_Y) {
+    ballBody.y = GROUND_Y + ballBody.radius;
+    ballBody.vy *= -bounceDamping; // Use progressive damping instead of fixed 0.7
+    ballBody.vx *= 0.95;
   
   // Check if ball has settled (low velocity = resting on ground)
   if (Math.abs(ballBody.vy) < 1 && Math.abs(ballBody.vx) < 1 && !ballTouchedBottom) {

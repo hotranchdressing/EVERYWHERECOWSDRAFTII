@@ -9,26 +9,27 @@
 </head>
 <body>
     <div class="outer-frame">
-        <!-- Top outer frame -->
-        <div class="outer-top">
 
+        <div class="outer-top">
+            <div class="scene-tracker">
+    <img id="scene-tracker-img" src="images/maps/map1.png" alt="Scene Tracker">
+</div>
         </div>
 
-        <!-- Central viewport where Three.js renders -->
+        <!--Three.js-->
         <div class="viewport-container">
             <div id="canvas-container"></div>
         </div>
 
-        <!-- Bottom outer frame -->
         <div class="outer-bottom">
-            <!-- Progress map -->
+            <!-- count -->
             <div class="progress-section">
-                <div id="progress-map" class="progress-map"></div>
-                <p class="scene-counter"><span id="current-scene">1</span> / 15</p>
+                <p class="scene-counter"><span id="current-scene"></span></p>
             </div>
 
             <!-- Product info display -->
             <div id="product-info" class="product-info">
+                <p id="product-text"></p>
             </div>
 
         </div>

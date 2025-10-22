@@ -5,19 +5,20 @@
 }
 
 h1 {
-  font-family: bc-novatica-cyr, sans-serif;
-font-weight: 400;
+font-family: "calvino", sans-serif;
+font-weight: 700;
 font-style: normal;
+color: #ad2424;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  font-family: bc-novatica-cyr, sans-serif;
-font-weight: 300;
+font-family: calvino, sans-serif;
+font-weight: 700;
 font-style: normal;
-  background: #fff8eb;
+color: #ad2424;
 }
 
 .outer-frame {
@@ -30,11 +31,25 @@ font-style: normal;
   z-index: 1;
 }
 
-/* TOP OUTER FRAME */
 .outer-top {
   padding: 20px 40px;
   pointer-events: auto;
   flex-shrink: 0;
+}
+
+.scene-tracker {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 400px;
+    height: auto;
+}
+
+.scene-tracker img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .outer-top h1 {
@@ -54,7 +69,7 @@ font-style: normal;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 50px 50px;
   pointer-events: auto;
   position: relative;
   overflow: hidden;
@@ -63,7 +78,6 @@ font-style: normal;
 #canvas-container {
   width: 80%;
   height: 80%;
-  background-image: url("images/dots2.jpg");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -77,7 +91,6 @@ font-style: normal;
 
 /* BOTTOM OUTER FRAME */
 .outer-bottom {
-  background:  #fff8eb;
   padding: 20px 40px;
   pointer-events: auto;
   display: flex;
@@ -101,39 +114,6 @@ font-style: normal;
   align-items: center;
 }
 
-.scene-dot {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #ccc;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.scene-dot:hover {
-  transform: scale(1.15);
-}
-
-.scene-dot.visited {
-  background: black;
-  opacity: 0.6;
-}
-
-.scene-dot.active {
-  background: white;
-  box-shadow: 0 0 8px black;
-  transform: scale(1.2);
-  border-color: black;
-}
-
-.scene-counter {
-  font-size: 14px;
-  color: #333;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
 /* PRODUCT INFO */
 .product-info {
   flex: 1;
@@ -146,22 +126,12 @@ font-style: normal;
 
 #product-text {
   font-size: 14px;
-  color: #333;
+  color: black;
   font-weight: 500;
-}
+  font-family: calvino, sans-serif;
+font-weight: 400;
+font-style: normal;
 
-/* NAV HINT */
-.nav-hint {
-  flex-shrink: 0;
-  text-align: right;
-}
-
-#scroll-hint {
-  font-size: 12px;
-  color: #666;
-  font-style: italic;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
 }
 
 
