@@ -299,7 +299,7 @@ const sceneConfigs = [
     id: 3,
     name: "Agriculture",
     viewportBackground: 'images/backgrounds/background3.jpg',
-    outerBackground: '#fcfeff',
+    outerBackground: '#dbdbdb',
     products: [
       { 
         x: -8, y: 6, 
@@ -318,10 +318,10 @@ const sceneConfigs = [
         maskUrl: 'images/agriculture/bloodmealpoultryfeedmask.png'
       },
       { 
-        x: -5, y: 1, 
-        imageWidth: 800,
+        x: 10, y: 8, 
+        imageWidth: 900,
         imageHeight: 700,
-        scale: 1.3,
+        scale: 6,
         imageUrl: 'images/agriculture/greenhouseglazing.png',
         maskUrl: 'images/agriculture/greenhouseglazingmask.png'
       },
@@ -374,7 +374,7 @@ const sceneConfigs = [
         maskUrl: 'images/agriculture/organicbonemealfertilizermask.png'
       },
       { 
-        x: 3, y: 6, 
+        x: 3.5, y: 6, 
         imageWidth: 900,
         imageHeight: 900,
         scale: 9,
@@ -403,104 +403,243 @@ const sceneConfigs = [
     id: 4,
     name: "Fuel",
     viewportBackground: 'images/backgrounds/background4.jpg',
-    outerBackground: '#fffcfcd7',
+    outerBackground: '#b0b0b0',
     products: [
       { 
-        x: -8, y: 6, 
-        imageWidth: 500,
+        x: 0, y: 6, 
+        imageWidth: 700,
         imageHeight: 500,
         scale: 8,
-        imageUrl: 'images/agriculture/balingtwine.png',
-        maskUrl: 'images/agriculture/balingtwinemask.png'
+        imageUrl: 'images/fuel/biodiesel.png',
+        maskUrl: 'images/fuel/biodieselmask.png'
       },
       { 
-        x: -12, y: 2, 
+        x: 7, y: -7.5, 
         imageWidth: 600,
         imageHeight: 600,
         scale: 8,
-        imageUrl: 'images/agriculture/bloodmealpoultryfeed.png',
-        maskUrl: 'images/agriculture/bloodmealpoultryfeedmask.png'
+        imageUrl: 'images/fuel/briquette.png',
+        maskUrl: 'images/fuel/briquettemask.png'
       },
       { 
-        x: -5, y: 1, 
-        imageWidth: 800,
-        imageHeight: 700,
-        scale: 1.3,
-        imageUrl: 'images/agriculture/greenhouseglazing.png',
-        maskUrl: 'images/agriculture/greenhouseglazingmask.png'
-      },
-      { 
-        x: -3, y: -1, 
+        x: -12, y: -6, 
         imageWidth: 600,
         imageHeight: 600,
-        scale: 15,
-        imageUrl: 'images/agriculture/herbicide.png',
-        maskUrl: 'images/agriculture/herbicidemask.png'
+        scale: 8,
+        imageUrl: 'images/fuel/cuttingoil.png',
+        maskUrl: 'images/fuel/cuttingoilmask.png'
       },
       { 
-        x: 3, y: -2, 
+        x: -1, y: -2, 
         imageWidth: 800,
         imageHeight: 600,
         scale: 15,
-        imageUrl: 'images/agriculture/hydroponicsgrowingmediabinder.png',
-        maskUrl: 'images/agriculture/hydroponicsgrowingmediabindermask.png'
+        imageUrl: 'images/fuel/heatingoiladditive.png',
+        maskUrl: 'images/fuel/heatingoiladditivemask.png'
       },
       { 
-        x: 10, y: 4, 
-        imageWidth: 400,
+        x: -4, y: 4, 
+        imageWidth: 700,
         imageHeight: 600,
-        scale: 3,
-        imageUrl: 'images/agriculture/irrigationdriptape.png',
-        maskUrl: 'images/agriculture/irrigationdriptapemask.png'
+        scale: 7,
+        imageUrl: 'images/fuel/jetfuelantiice.png',
+        maskUrl: 'images/fuel/jetfuelantiicemask.png'
       },
       { 
-        x: 8, y: -4, 
+        x: -3, y: -6, 
         imageWidth: 800,
         imageHeight: 800,
         scale: 10,
-        imageUrl: 'images/agriculture/minerallick.png',
-        maskUrl: 'images/agriculture/minerallickmask.png'
+        imageUrl: 'images/fuel/lighterfluidadditive.png',
+        maskUrl: 'images/fuel/lighterfluidadditivemask.png'
       },
       { 
-        x: 8, y: 1, 
+        x: 14, y: 1, 
+        imageWidth: 600,
+        imageHeight: 400,
+        scale: 12,
+        imageUrl: 'images/fuel/marinefueladditive.png',
+        maskUrl: 'images/fuel/marinefueladditivemask.png'
+      },
+    
+    ]
+  },
+{
+    id: 5,
+    name: "Plastic",
+    viewportBackground: 'images/backgrounds/background5.jpg',
+    outerBackground: '#b0b0b0',
+    products: [
+      { 
+        x: 0, y: 6, 
+        imageWidth: 700,
+        imageHeight: 400,
+        scale: 8,
+        imageUrl: 'images/plastics/bioplastic.png',
+        maskUrl: 'images/plastics/bioplasticmask.png'
+      },
+      { 
+        x: 7, y: -7.5, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 8,
+        imageUrl: 'images/plastics/phonecase.png',
+        maskUrl: 'images/plastics/phonecasemask.png'
+      },
+      { 
+        x: -12, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        imageUrl: 'images/plastics/poolliner.png',
+        maskUrl: 'images/plastics/poollinermask.png'
+      },
+      { 
+        x: -1, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 12,
+        imageUrl: 'images/plastics/pvcfilm.png',
+        maskUrl: 'images/plastics/pvcfilmmask.png'
+      },
+      { 
+        x: 0, y: -8, 
+        imageWidth: 700,
+        imageHeight: 600,
+        scale: 7,
+        imageUrl: 'images/plastics/pvctube.png',
+        maskUrl: 'images/plastics/pvctubemask.png'
+      },
+      { 
+        x: -3, y: -6, 
+        imageWidth: 800,
+        imageHeight: 1000,
+        scale: 10,
+        imageUrl: 'images/plastics/raincoat.png',
+        maskUrl: 'images/plastics/raincoatmask.png'
+      },
+      { 
+        x: 6, y: 1, 
         imageWidth: 400,
         imageHeight: 400,
         scale: 12,
-        imageUrl: 'images/agriculture/mulchfilm.png',
-        maskUrl: 'images/agriculture/mulchfilmmask.png'
+        imageUrl: 'images/plastics/rubberboots.png',
+        maskUrl: 'images/plastics/rubberbootsmask.png'
       },
       { 
-        x: -3, y: 3, 
-        imageWidth: 300,
-        imageHeight: 350,
+        x: -8, y: 5, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 12,
+        imageUrl: 'images/plastics/showerliner.png',
+        maskUrl: 'images/plastics/showerlinermask.png'
+      },
+      { 
+        x: 4, y: -6, 
+        imageWidth: 700,
+        imageHeight: 600,
+        scale: 7,
+        imageUrl: 'images/plastics/tarp.png',
+        maskUrl: 'images/plastics/tarpmask.png'
+      },
+      { 
+        x: 4, y: 6, 
+        imageWidth: 800,
+        imageHeight: 1000,
+        scale: 10,
+        imageUrl: 'images/plastics/vinylboat.png',
+        maskUrl: 'images/plastics/vinylboatmask.png'
+      },
+      { 
+        x: 3, y: 1, 
+        imageWidth: 400,
+        imageHeight: 400,
+        scale: 12,
+        imageUrl: 'images/plastics/vinylrockhold.png',
+        maskUrl: 'images/plastics/vinylrockholdmask.png'
+      },
+    
+    ]
+  },
+{
+    id: 5,
+    name: "Pharma",
+    viewportBackground: 'images/backgrounds/background6.jpg',
+    outerBackground: '#909090',
+    products: [
+      { 
+        x: 0, y: 6, 
+        imageWidth: 700,
+        imageHeight: 400,
         scale: 8,
-        imageUrl: 'images/agriculture/organicbonemealfertilizer.png',
-        maskUrl: 'images/agriculture/organicbonemealfertilizermask.png'
+        imageUrl: 'images/pharma/catgutsuture.png',
+        maskUrl: 'images/pharma/catgutsuturemask.png'
       },
       { 
-        x: 3, y: 6, 
-        imageWidth: 900,
-        imageHeight: 900,
-        scale: 9,
-        imageUrl: 'images/agriculture/seedcoating.png',
-        maskUrl: 'images/agriculture/seedcoatingmask.png'
-      },
-      { 
-        x: 0, y: -4, 
+        x: 10, y: -6.5, 
         imageWidth: 600,
         imageHeight: 600,
-        scale: 10,
-        imageUrl: 'images/agriculture/treeguard.png',
-        maskUrl: 'images/agriculture/treeguardmask.png'
+        scale: 8,
+        imageUrl: 'images/pharma/demineralizedbonematrix.png',
+        maskUrl: 'images/pharma/demineralizedbonematrix.png'
       },
       { 
-        x: 13, y: 7, 
+        x: -12, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        imageUrl: 'images/pharma/diluent.png',
+        maskUrl: 'images/pharma/diluentmask.png'
+      },
+      { 
+        x: -6, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 12,
+        imageUrl: 'images/pharma/gelcaps.png',
+        maskUrl: 'images/pharma/gelcapsmask.png'
+      },
+      { 
+        x: 5, y: -1, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 7,
+        imageUrl: 'images/pharma/glucochond.png',
+        maskUrl: 'images/pharma/glucochondmask.png'
+      },
+      { 
+        x: -3, y: -6, 
+        imageWidth: 800,
+        imageHeight: 1000,
+        scale: 7,
+        imageUrl: 'images/pharma/heparin.png',
+        maskUrl: 'images/pharma/heparinmask.png'
+      },
+      { 
+        x: 10, y: 8, 
+        imageWidth: 600,
+        imageHeight: 400,
+        scale: 12,
+        imageUrl: 'images/pharma/hyaluronicinj.png',
+        maskUrl: 'images/pharma/hyaluronicinjmask.png'
+      },
+      { 
+        x: -8, y: 5, 
+        imageWidth: 800,
+        imageHeight: 500,
+        scale: 12,
+        imageUrl: 'images/pharma/insulin.png',
+        maskUrl: 'images/pharma/insulinmask.png'
+      },
+      { 
+        x: 4, y: -6, 
         imageWidth: 700,
         imageHeight: 700,
-        scale: 8,
-        imageUrl: 'images/agriculture/treewound.png',
-        maskUrl: 'images/agriculture/treewoundmask.png'
+        scale: 7,
+        imageUrl: 'images/pharma/prostheticheartvalve.png',
+        maskUrl: 'images/pharma/prostheticheartvalvemask.png'
       },
+    
     ]
   }
 ];
@@ -518,13 +657,29 @@ function updateBackground(viewportBg, outerBg) {
   // Update viewport (canvas container)
   const container = document.getElementById('canvas-container');
   if (container && viewportBg) {
-    container.style.backgroundImage = `url('${viewportBg}')`;
+    if (viewportBg.startsWith('#') || viewportBg.startsWith('rgb')) {
+      // It's a color
+      container.style.background = viewportBg;
+    } else {
+      // It's an image URL
+      container.style.backgroundImage = `url('${viewportBg}')`;
+      container.style.backgroundSize = 'cover';
+      container.style.backgroundPosition = 'center';
+    }
   }
   
   // Update outer frame
   const outerFrame = document.querySelector('.outer-frame');
   if (outerFrame && outerBg) {
-    outerFrame.style.backgroundImage = `url('${outerBg}')`;
+    if (outerBg.startsWith('#') || outerBg.startsWith('rgb')) {
+      // It's a color
+      outerFrame.style.background = outerBg;
+    } else {
+      // It's an image URL
+      outerFrame.style.backgroundImage = `url('${outerBg}')`;
+      outerFrame.style.backgroundSize = 'cover';
+      outerFrame.style.backgroundPosition = 'center';
+    }
   }
 }
 
@@ -568,7 +723,9 @@ renderer.domElement.addEventListener('mouseleave', onMouseUp);
   initProgressMap();
 
   // Load first scene
-  loadScene(2);
+  loadScene(0
+
+  );
 
   // Start animation loop
   animate();
@@ -635,7 +792,9 @@ function loadScene(index) {
   const sceneConfig = sceneConfigs[index];
 
     // Update background
- updateBackground(sceneConfig.viewportBackground, sceneConfig.outerBackground);
+if (sceneConfig.viewportBackground || sceneConfig.outerBackground) {
+  updateBackground(sceneConfig.viewportBackground, sceneConfig.outerBackground);
+}
 
   // Create ball
   const ballRadius = 0.5;
