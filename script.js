@@ -1256,18 +1256,9 @@ function onMouseUp(event) {
 // Start a 2-minute timer
 setTimeout(() => {
   console.log("2 minutes elapsed — activating chute experience");
-
-  // Fade out main container
-  const main = document.querySelector("#main-container");
-  main.style.transition = "opacity 2s ease";
-  main.style.opacity = 0;
-
-  setTimeout(() => {
-    main.style.display = "none"; // hide main scene
-    const chuteScene = document.getElementById("chute-scene");
-    chuteScene.style.display = "block"; // make chute visible
-    startChuteExperience(); // start chute experience
-  }, 2000); // wait for fade
+  
+  transitionToChute();
+  
 }, 120000); // 2 minutes
 
 // Create a 2-minute visible countdown timer
@@ -1284,6 +1275,103 @@ const countdownInterval = setInterval(() => {
   if (timeLeft <= 0) {
     clearInterval(countdownInterval);
     timerDisplay.style.display = "none"; // hide the timer
-    startChuteExperience(); // your existing chute trigger
+    transitionToChute();
   }
 }, 1000);
+
+function transitionToChute() {
+  console.log('Starting chute transition...');
+  
+  // Disable physics during transition
+  ballBody = null;
+  
+  // Get references
+  const viewportContainer = document.querySelector('.viewport-container');
+  const canvasContainer = document.getElementById('canvas-container');
+  const sceneTracker = document.querySelector('.scene-tracker');
+  
+  // Duration and timing
+  const duration = 5000; // 5 seconds
+  const startTime = Date.now();
+  
+  // Store initial camera state
+  const startCameraPos = { x: camera.position.x, y: camera.position.y, z: camera.position.z };
+  
+  // Calculate how much to scale the tracker to fill screen
+  const trackerRect = sceneTracker.getBoundingClientRect();
+  const screenWidth = window.innerWidth;
+  const screenHeight = window.innerHeight;
+  const scaleX = screenWidth / trackerRect.width;
+  const scaleY = screenHeight / trackerRect.height;
+  const maxScale = Math.max(scaleX, scaleY) * 100; // overfill
+  
+  // Easing function
+  function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  }
+  
+  // Animation loop
+  function animateTransition() {
+    const elapsed = Date.now() - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = easeInOutCubic(progress);
+    
+    // Animate camera - zoom in dramatically
+    camera.position.x = startCameraPos.x * (1 - eased);
+    camera.position.y = startCameraPos.y * (1 - eased);
+    camera.position.z = startCameraPos.z - (13 * eased); // 15 → 2
+    
+    // Fade products to black
+    scene.traverse((child) => {
+      if (child.material && child !== ballMesh) {
+        if (child.material.opacity !== undefined) {
+          child.material.opacity = 1 - eased;
+        }
+      }
+    });
+    
+    // Fade to black (not white)
+    canvasContainer.style.filter = `brightness(${1 - eased})`;
+    
+    // Zoom scene tracker to fill entire screen
+    if (sceneTracker) {
+      const scale = 1 + eased * (maxScale - 1); // Scale from 1 to maxScale
+      sceneTracker.style.transformOrigin = '32% 90%';
+      // Move to screen center (50%, 50% of viewport, not just starting position)
+      const targetLeft = 300;
+      const targetTop = 300;
+      const currentLeft = 20 + eased * (targetLeft - 20);
+      const currentTop = 20 + eased * (targetTop - 20);
+      
+      sceneTracker.style.transform = `translate(-50%, -50%) scale(${scale})`;
+      sceneTracker.style.left = `${currentLeft}%`;
+      sceneTracker.style.top = `${currentTop}%`;
+      sceneTracker.style.opacity = '1'; // Stay fully opaque
+    }
+    
+    // Transform viewport for depth
+    const viewportScale = 1 + eased * 0.5;
+    viewportContainer.style.transform = `scale(${viewportScale})`;
+    
+    renderer.render(scene, camera);
+    
+    if (progress < 1) {
+      requestAnimationFrame(animateTransition);
+    } else {
+      // Transition complete
+      console.log('Transition complete - navigating to chute');
+      
+      // Hide main container and show chute
+      const main = document.querySelector("#main-container");
+      main.style.display = "none";
+      
+      const chuteScene = document.getElementById("chute-scene");
+      chuteScene.style.display = "block";
+      
+      // Start chute experience
+      startChuteExperience();
+    }
+  }
+  
+  animateTransition();
+}

@@ -55,6 +55,8 @@ font-size: 30px !important;
     z-index: 1000;
     width: 400px;
     height: auto;
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out, left 0.1s ease-out, top 0.1s ease-out;
+    transform-origin: center center;
     
 }
 
@@ -85,6 +87,9 @@ font-size: 30px !important;
   pointer-events: auto;
   position: relative;
   overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
 }
 
 #canvas-container {
