@@ -162,6 +162,7 @@ const sceneConfigs = [
         imageWidth: 500,
         imageHeight: 1000,
         scale: 8,
+        productName: "Asphalt Binder Modifier: Bone Ash",
         imageUrl: 'images/construction/asphalt.png',
         maskUrl: 'images/construction/asphaltmask.png'
       },
@@ -170,6 +171,7 @@ const sceneConfigs = [
         imageWidth: 1100,
         imageHeight: 1000,
         scale: 6,
+        productName: "Asphalt Shingles: Bone Ash",
         imageUrl: 'images/construction/asphaltshingle.png',
         maskUrl: 'images/construction/asphaltshinglemask.png'
       },
@@ -178,6 +180,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 700,
         scale: 5,
+        productName: "Brick: Stearates, Mold Release Agent",
         imageUrl: 'images/construction/brick.png',
         maskUrl: 'images/construction/brickmask.png'
       },
@@ -186,6 +189,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 500,
         scale: 9,
+        productName: "Caulk: Methyl Tallowate, Potassium Tallowate, Glycerol",
         imageUrl: 'images/construction/caulk.png',
         maskUrl: 'images/construction/caulkmask.png'
       },
@@ -194,22 +198,16 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 800,
         scale: 6,
+        productName: "Ceramic Tile (Glaze): Bone Ash",
         imageUrl: 'images/construction/ceramictile.png',
         maskUrl: 'images/construction/ceramictilemask.png'
-      },
-      { 
-        x: 7, y: 4, 
-        imageWidth: 800,
-        imageHeight: 600,
-        scale: 5,
-        imageUrl: 'images/construction/cmu.png',
-        maskUrl: 'images/construction/cmumask.png'
       },
       { 
         x: -8, y: -2, 
         imageWidth: 800,
         imageHeight: 1000,
         scale: 7,
+        productName: "Concrete Mix: Tallow",
         imageUrl: 'images/construction/concretemix.png',
         maskUrl: 'images/construction/concretemixmask.png'
       },
@@ -218,6 +216,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 600,
         scale: 7,
+        productName: "Insulation (SIP): Stearic Acid",
         imageUrl: 'images/construction/insulation.png',
         maskUrl: 'images/construction/insulationmask.png'
       },
@@ -226,6 +225,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 900,
         scale: 7,
+        productName: "Countertop Laminate: Stearic Acid",
         imageUrl: 'images/construction/countertoplaminate.png',
         maskUrl: 'images/construction/countertoplaminatemask.png'
       },
@@ -234,6 +234,7 @@ const sceneConfigs = [
         imageWidth: 1000,
         imageHeight: 1000,
         scale: 8,
+        productName: "Drywall Joint Compound: Stearates",
         imageUrl: 'images/construction/drywall.png',
         maskUrl: 'images/construction/drywallmask.png'
       },
@@ -242,22 +243,16 @@ const sceneConfigs = [
         imageWidth: 1000,
         imageHeight: 600,
         scale: 8,
+        productName: "Floor Wax: Stearic Acid",
         imageUrl: 'images/construction/floorwax.png',
         maskUrl: 'images/construction/floorwaxmask.png'
-      },
-      { 
-        x: -9, y: 7, 
-        imageWidth: 700,
-        imageHeight: 600,
-        scale: 6,
-        imageUrl: 'images/construction/grout.png',
-        maskUrl: 'images/construction/groutmask.png'
       },
       { 
         x: -1, y: -7.5, 
         imageWidth: 400,
         imageHeight: 550,
         scale: 8,
+        productName: "Linoleum: Linseed Oil (Stearic Acid)",
         imageUrl: 'images/construction/linoleum.png',
         maskUrl: 'images/construction/linoleummask.png'
       },
@@ -266,6 +261,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 7,
+        productName: "Porcelain Fixture: Bone Ash",
         imageUrl: 'images/construction/porcelainfixture.png',
         maskUrl: 'images/construction/porcelainfixturemask.png'
       },
@@ -274,6 +270,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 650,
         scale: 4,
+        productName: "Sandpaper Backing: Hide Glue",
         imageUrl: 'images/construction/sandpaperbacking.png',
         maskUrl: 'images/construction/sandpaperbackingmask.png'
       },
@@ -282,6 +279,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 400,
         scale: 7,
+        productName: "Tarpaper: Tallow-Modified Bitumen",
         imageUrl: 'images/construction/tarpaper.png',
         maskUrl: 'images/construction/tarpapermask.png'
       },
@@ -290,6 +288,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 400,
         scale: 7,
+        productName: "Waterproof Membrane: Tallow-Modified Bitumen",
         imageUrl: 'images/construction/waterproofmembrane.png',
         maskUrl: 'images/construction/waterproofmembranemask.png'
       },
@@ -306,6 +305,7 @@ const sceneConfigs = [
         imageWidth: 500,
         imageHeight: 500,
         scale: 8,
+        productName: "Baling Twine: Tallow",
         imageUrl: 'images/agriculture/balingtwine.png',
         maskUrl: 'images/agriculture/balingtwinemask.png'
       },
@@ -314,6 +314,8 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 8,
+        productName: "Waterproof Membrane: Tallow-Modified Bitumen",
+        productName: "Poultry Feed: Blood Meal",
         imageUrl: 'images/agriculture/bloodmealpoultryfeed.png',
         maskUrl: 'images/agriculture/bloodmealpoultryfeedmask.png'
       },
@@ -322,6 +324,7 @@ const sceneConfigs = [
         imageWidth: 900,
         imageHeight: 700,
         scale: 6,
+        productName: "Greenhouse Glazing: Stearates",
         imageUrl: 'images/agriculture/greenhouseglazing.png',
         maskUrl: 'images/agriculture/greenhouseglazingmask.png'
       },
@@ -330,6 +333,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 15,
+        productName: "Herbicide: Tallow Amines (Adjuvants)",
         imageUrl: 'images/agriculture/herbicide.png',
         maskUrl: 'images/agriculture/herbicidemask.png'
       },
@@ -338,6 +342,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 600,
         scale: 15,
+        productName: "Hydroponics Growing Media Binder: Gelatin",
         imageUrl: 'images/agriculture/hydroponicsgrowingmediabinder.png',
         maskUrl: 'images/agriculture/hydroponicsgrowingmediabindermask.png'
       },
@@ -346,6 +351,7 @@ const sceneConfigs = [
         imageWidth: 400,
         imageHeight: 600,
         scale: 3,
+        productName: "Irrrigation Drip Tape: Tallow Fatty Acids",
         imageUrl: 'images/agriculture/irrigationdriptape.png',
         maskUrl: 'images/agriculture/irrigationdriptapemask.png'
       },
@@ -354,6 +360,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 800,
         scale: 10,
+        productName: "Livestock Mineral Lick: Tallow",
         imageUrl: 'images/agriculture/minerallick.png',
         maskUrl: 'images/agriculture/minerallickmask.png'
       },
@@ -362,6 +369,7 @@ const sceneConfigs = [
         imageWidth: 400,
         imageHeight: 400,
         scale: 12,
+        productName: "Mulch Film: Stearic Acid",
         imageUrl: 'images/agriculture/mulchfilm.png',
         maskUrl: 'images/agriculture/mulchfilmmask.png'
       },
@@ -370,6 +378,7 @@ const sceneConfigs = [
         imageWidth: 300,
         imageHeight: 350,
         scale: 8,
+        productName: "Organic Bone Meal Fertilizer: Bone Meal",
         imageUrl: 'images/agriculture/organicbonemealfertilizer.png',
         maskUrl: 'images/agriculture/organicbonemealfertilizermask.png'
       },
@@ -378,6 +387,7 @@ const sceneConfigs = [
         imageWidth: 900,
         imageHeight: 900,
         scale: 9,
+        productName: "Seed Coating: Tallow-Based Film Former",
         imageUrl: 'images/agriculture/seedcoating.png',
         maskUrl: 'images/agriculture/seedcoatingmask.png'
       },
@@ -386,6 +396,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 10,
+        productName: "Tree Guard: Tallow",
         imageUrl: 'images/agriculture/treeguard.png',
         maskUrl: 'images/agriculture/treeguardmask.png'
       },
@@ -394,6 +405,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 700,
         scale: 8,
+        productName: "Tree Wound Dressing: Tallow",
         imageUrl: 'images/agriculture/treewound.png',
         maskUrl: 'images/agriculture/treewoundmask.png'
       },
@@ -410,6 +422,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 500,
         scale: 8,
+        productName: "Biodiesel: Tallow Methyl Ester",
         imageUrl: 'images/fuel/biodiesel.png',
         maskUrl: 'images/fuel/biodieselmask.png'
       },
@@ -418,6 +431,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 8,
+        productName: "Briquette: Tallow (binder)",
         imageUrl: 'images/fuel/briquette.png',
         maskUrl: 'images/fuel/briquettemask.png'
       },
@@ -426,6 +440,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 8,
+        productName: "Metalworking Cutting Fluid: Tallow Fatty Acids, Tallow Amines",
         imageUrl: 'images/fuel/cuttingoil.png',
         maskUrl: 'images/fuel/cuttingoilmask.png'
       },
@@ -434,6 +449,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 600,
         scale: 15,
+        productName: "Heating Oil Additive: Tallow",
         imageUrl: 'images/fuel/heatingoiladditive.png',
         maskUrl: 'images/fuel/heatingoiladditivemask.png'
       },
@@ -442,6 +458,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 600,
         scale: 7,
+        productName: "Jet Fuel: Tallow",
         imageUrl: 'images/fuel/jetfuelantiice.png',
         maskUrl: 'images/fuel/jetfuelantiicemask.png'
       },
@@ -450,6 +467,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 800,
         scale: 10,
+        productName: "Lighter Fluid Additive: Glycerol",
         imageUrl: 'images/fuel/lighterfluidadditive.png',
         maskUrl: 'images/fuel/lighterfluidadditivemask.png'
       },
@@ -458,6 +476,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 400,
         scale: 12,
+        productName: "Marine Fuel Additive: Fatty Acid Methyl Esters",
         imageUrl: 'images/fuel/marinefueladditive.png',
         maskUrl: 'images/fuel/marinefueladditivemask.png'
       },
@@ -475,6 +494,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 400,
         scale: 8,
+        productName: "Bio-Plastic (PHA): Tallow, Manure, Offal (feedstock)",
         imageUrl: 'images/plastics/bioplastic.png',
         maskUrl: 'images/plastics/bioplasticmask.png'
       },
@@ -483,6 +503,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 8,
+        productName: "Phone Case (Thermoplastic Elastomers): Stearic Acid",
         imageUrl: 'images/plastics/phonecase.png',
         maskUrl: 'images/plastics/phonecasemask.png'
       },
@@ -491,6 +512,7 @@ const sceneConfigs = [
         imageWidth: 900,
         imageHeight: 600,
         scale: 8,
+        productName: "Pool Liner: Stearic Acid",
         imageUrl: 'images/plastics/poolliner.png',
         maskUrl: 'images/plastics/poollinermask.png'
       },
@@ -499,6 +521,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 600,
         scale: 12,
+        productName: "PVC Film: Stearic Acid",
         imageUrl: 'images/plastics/pvcfilm.png',
         maskUrl: 'images/plastics/pvcfilmmask.png'
       },
@@ -507,6 +530,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 600,
         scale: 7,
+        productName: "PVC Tubing: Stearic Acid",
         imageUrl: 'images/plastics/pvctube.png',
         maskUrl: 'images/plastics/pvctubemask.png'
       },
@@ -515,6 +539,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 1000,
         scale: 10,
+        productName: "Raincoat: Stearic Acid",
         imageUrl: 'images/plastics/raincoat.png',
         maskUrl: 'images/plastics/raincoatmask.png'
       },
@@ -523,6 +548,7 @@ const sceneConfigs = [
         imageWidth: 400,
         imageHeight: 400,
         scale: 12,
+        productName: "Rubber Boots: Stearic Acid",
         imageUrl: 'images/plastics/rubberboots.png',
         maskUrl: 'images/plastics/rubberbootsmask.png'
       },
@@ -531,6 +557,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 600,
         scale: 12,
+        productName: "Shower Liner: Stearic Acid",
         imageUrl: 'images/plastics/showerliner.png',
         maskUrl: 'images/plastics/showerlinermask.png'
       },
@@ -539,6 +566,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 600,
         scale: 7,
+        productName: "Tarp: Stearic Acid",
         imageUrl: 'images/plastics/tarp.png',
         maskUrl: 'images/plastics/tarpmask.png'
       },
@@ -547,6 +575,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 1000,
         scale: 10,
+        productName: "Inflatable Boat: Stearic Acid",
         imageUrl: 'images/plastics/vinylboat.png',
         maskUrl: 'images/plastics/vinylboatmask.png'
       },
@@ -555,6 +584,7 @@ const sceneConfigs = [
         imageWidth: 400,
         imageHeight: 400,
         scale: 12,
+        productName: "Rock Climbing Hold: Tallow fatty acids",
         imageUrl: 'images/plastics/vinylrockhold.png',
         maskUrl: 'images/plastics/vinylrockholdmask.png'
       },
@@ -572,6 +602,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 400,
         scale: 8,
+        productName: "Absorbable Suture: Collagen",
         imageUrl: 'images/pharma/catgutsuture.png',
         maskUrl: 'images/pharma/catgutsuturemask.png'
       },
@@ -580,6 +611,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 600,
         scale: 8,
+        productName: "Bone Marrow Aspirate Scaffold: Demineralized Bone Matrix",
         imageUrl: 'images/pharma/demineralizedbonematrix.png',
         maskUrl: 'images/pharma/demineralizedbonematrix.png'
       },
@@ -588,6 +620,7 @@ const sceneConfigs = [
         imageWidth: 900,
         imageHeight: 600,
         scale: 8,
+        productName: "Tablet Pharmaceuticals: Lactose (Diluent)",
         imageUrl: 'images/pharma/diluent.png',
         maskUrl: 'images/pharma/diluentmask.png'
       },
@@ -596,6 +629,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 600,
         scale: 12,
+        productName: "Gel Capsules: Gelatin",
         imageUrl: 'images/pharma/gelcaps.png',
         maskUrl: 'images/pharma/gelcapsmask.png'
       },
@@ -604,6 +638,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 800,
         scale: 7,
+        productName: "Joint Supplement: Chondroitin Sulfate",
         imageUrl: 'images/pharma/glucochond.png',
         maskUrl: 'images/pharma/glucochondmask.png'
       },
@@ -612,6 +647,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 1000,
         scale: 7,
+        productName: "Heparin (Anticoagulant): Bovine Intestinal Mucosa",
         imageUrl: 'images/pharma/heparin.png',
         maskUrl: 'images/pharma/heparinmask.png'
       },
@@ -620,6 +656,7 @@ const sceneConfigs = [
         imageWidth: 600,
         imageHeight: 400,
         scale: 12,
+        productName: "Hyaluronic Acid Injection: Hyaluronic Acid (Umbilical Cord, Joint Fluid)",
         imageUrl: 'images/pharma/hyaluronicinj.png',
         maskUrl: 'images/pharma/hyaluronicinjmask.png'
       },
@@ -628,6 +665,7 @@ const sceneConfigs = [
         imageWidth: 800,
         imageHeight: 500,
         scale: 12,
+        productName: "Insulin: Pancreatic Tissue",
         imageUrl: 'images/pharma/insulin.png',
         maskUrl: 'images/pharma/insulinmask.png'
       },
@@ -636,6 +674,7 @@ const sceneConfigs = [
         imageWidth: 700,
         imageHeight: 700,
         scale: 7,
+        productName: "Prosthetic Heart Valve: Percardium Tissue",
         imageUrl: 'images/pharma/prostheticheartvalve.png',
         maskUrl: 'images/pharma/prostheticheartvalvemask.png'
       },
@@ -872,6 +911,14 @@ function loadScene(index) {
   scrollLocked = true;
   productMeshes = [];
 
+  // Enable traces only in final scene
+  isDrawingTraces = (index === sceneConfigs.length - 1);
+  lastTracePos = null;
+  
+  // Initialize trace canvas if needed
+  if (isDrawingTraces && !traceCtx) {
+    initTraceCanvas();
+  }
 
   // Clear scene (keep lights)
   scene.children = scene.children.filter(child => child instanceof THREE.Light);
@@ -883,6 +930,16 @@ if (sceneConfig.viewportBackground || sceneConfig.outerBackground) {
   updateBackground(sceneConfig.viewportBackground, sceneConfig.outerBackground);
 }
 
+function worldToScreen(worldX, worldY) {
+  // Convert Three.js world coordinates to screen pixels
+  const vector = new THREE.Vector3(worldX, worldY, 0);
+  vector.project(camera);
+  
+  const x = (vector.x + 1) / 2 * traceCanvas.width;
+  const y = (-vector.y + 1) / 2 * traceCanvas.height;
+  
+  return { x, y };
+}
   // Create ball
   const ballRadius = 0.5;
   const ballGeometry = new THREE.SphereGeometry(ballRadius, 32, 32);
@@ -1135,6 +1192,18 @@ function onMouseDown(event) {
   mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
   mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
 
+    raycaster.setFromCamera(mouse, camera);
+  
+  // Check if final scene
+  if (currentSceneIndex === sceneConfigs.length - 1) {
+    const ballIntersect = raycaster.intersectObject(ballMesh);
+    if (ballIntersect.length > 0) {
+      selectedProduct = ballMesh; // Reuse the same dragging system
+      selectedProduct.userData.isDragging = true;
+      return; // Don't check products if ball is selected
+    }
+  }
+
   // Raycast to find intersected objects
   raycaster.setFromCamera(mouse, camera);
   const intersects = raycaster.intersectObjects(productMeshes);
@@ -1160,6 +1229,11 @@ function onMouseMove(event) {
 
   selectedProduct.position.x = intersection.x;
   selectedProduct.position.y = intersection.y;
+
+    if (selectedProduct === ballMesh && isDrawingTraces) {
+    drawTrace(intersection.x, intersection.y);
+  }
+
 }
 
 function onMouseUp(event) {
