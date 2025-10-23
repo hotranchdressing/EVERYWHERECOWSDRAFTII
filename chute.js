@@ -1,7 +1,11 @@
 // chute.js
+let chuteCompleted = false;
+
 function startChuteExperience() {
+  if (chuteCompleted) return; // prevents rerunning
   console.log("Starting chute walkthrough...");
 
+  chuteCompleted = true;
   const frameCount = 51;
   let pan = 0;
   let currentFrame = 1;
@@ -26,15 +30,21 @@ function startChuteExperience() {
     images.push(img);
   }
 
-  // Function to update background frame
-  function updateFrame() {
-    const frameNumber = String(currentFrame).padStart(3, '0');
-    chuteScene.style.backgroundImage = `url('images/chute_frames/frame${frameNumber}.png')`;
-    chuteScene.style.backgroundPosition = `${pan}px center`;
+ // Function to update background frame
+function updateFrame() {
+  const frameNumber = String(currentFrame).padStart(3, '0');
+  chuteScene.style.backgroundImage = `url('images/chute_frames/frame${frameNumber}.png')`;
+  chuteScene.style.backgroundPosition = `${pan}px center`;
 
-    if (currentFrame === frameCount) {
-      chuteScene.style.transition = "opacity 3s ease";
-      chuteScene.style.opacity = 0;
+  if (currentFrame === frameCount) {
+    // fade out chute
+    chuteScene.style.transition = "opacity 3s ease";
+    chuteScene.style.opacity = 0;
+
+      // CHANGED: Navigate to home.html after chute fades
+      setTimeout(() => {
+        window.location.href = "home.html"; // Navigate to home page
+      }, 3000); // Wait for fade to complete
     } else {
       chuteScene.style.opacity = 1;
     }
@@ -53,9 +63,9 @@ function startChuteExperience() {
 
     // allow natural left/right scrolling for parallax effect
     if (e.key === "ArrowLeft") {
-      pan -= 50; // adjust this for scroll distance
+      pan -= 100; // adjust this for scroll distance
     } else if (e.key === "ArrowRight") {
-      pan += 50;
+      pan += 100;
     }
   });
 }

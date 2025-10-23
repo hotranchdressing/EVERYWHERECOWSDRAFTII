@@ -9,12 +9,21 @@ font-family: "calvino", sans-serif;
 font-weight: 700;
 font-style: normal;
 color: #ad2424;
+font-size: 18px;
+}
+
+p {
+  font-family: "calvino", sans-serif;
+font-weight: 300;
+font-style: normal;
+color: black;
+font-size: 12px;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
 font-family: calvino, sans-serif;
 font-weight: 700;
 font-style: normal;
@@ -164,7 +173,7 @@ font-size: 30px !important;
   font-family: calvino, sans-serif;
 font-weight: 400;
 font-style: normal;
-
+color: #ad2424;
 }
 
 #countdown-timer {
@@ -215,4 +224,128 @@ color: #ad2424;
   .viewport-container {
     padding: 15px;
   }
+}
+
+#landing-page {
+  position: fixed;       /* cover entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  opacity: 0;           /* start hidden */
+  transition: opacity 2s ease;
+  z-index: 2000;         /* above chute and other content */
+}
+
+#landing-page.visible {
+  opacity: 1;            /* fade in */
+}
+
+.landing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.landing-content {
+  max-width: 768px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-family: calvino, sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.gallery-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+/* background video layer — fixed so it stays put */
+#gallery-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  z-index: 0;
+}
+
+/* iframe style */
+#gallery-video iframe {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+  width: 320px;
+  height: 180px;
+  border: none;
+  transition: all 1s ease;
+}
+
+/* scrollable gallery */
+.gallery-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 100px;
+  padding: 50px 100px;
+  z-index: 10;
+}
+
+.floating-menu {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  gap: 24px;
+  z-index: 1000;
+  font-family: "calvino", sans-serif;
+font-weight: 100;
+font-style: normal;
+color: black;
+font-size: 12px;
+}
+
+.floating-menu a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.floating-menu a:hover {
+  opacity: 1;
+}
+
+
+#diagram-container {  /* Changed from .diagram-container to #diagram-container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Diagrams (images or SVGs) */
+#diagram-container img {
+  max-width: 80%;  /* Changed: Max 80% of viewport width */
+  max-height: 80%; /* Changed: Max 80% of viewport height */
+  width: auto;     /* Changed: Let it scale naturally */
+  height: auto;    /* Changed: Let it scale naturally */
+  object-fit: contain;
+  display: block;
 }

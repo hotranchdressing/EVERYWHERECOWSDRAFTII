@@ -1303,7 +1303,11 @@ function transitionToChute() {
   const screenHeight = window.innerHeight;
   const scaleX = screenWidth / trackerRect.width;
   const scaleY = screenHeight / trackerRect.height;
-  const maxScale = Math.max(scaleX, scaleY) * 100; // overfill
+  const maxScale = Math.max(scaleX, scaleY) * 1.5; // Changed: More reasonable overfill
+  
+  // Get initial position
+  const startLeft = parseFloat(window.getComputedStyle(sceneTracker).left);
+  const startTop = parseFloat(window.getComputedStyle(sceneTracker).top);
   
   // Easing function
   function easeInOutCubic(t) {
@@ -1319,7 +1323,7 @@ function transitionToChute() {
     // Animate camera - zoom in dramatically
     camera.position.x = startCameraPos.x * (1 - eased);
     camera.position.y = startCameraPos.y * (1 - eased);
-    camera.position.z = startCameraPos.z - (13 * eased); // 15 → 2
+    camera.position.z = startCameraPos.z - (13 * eased);
     
     // Fade products to black
     scene.traverse((child) => {
@@ -1330,23 +1334,21 @@ function transitionToChute() {
       }
     });
     
-    // Fade to black (not white)
+    // Fade to black
     canvasContainer.style.filter = `brightness(${1 - eased})`;
     
-    // Zoom scene tracker to fill entire screen
+    // Zoom scene tracker - SIMPLIFIED
     if (sceneTracker) {
-      const scale = 1 + eased * (maxScale - 1); // Scale from 1 to maxScale
-      sceneTracker.style.transformOrigin = '32% 90%';
-      // Move to screen center (50%, 50% of viewport, not just starting position)
-      const targetLeft = 300;
-      const targetTop = 300;
-      const currentLeft = 20 + eased * (targetLeft - 20);
-      const currentTop = 20 + eased * (targetTop - 20);
+      // Set the focal point ONCE at the start (32% from left, 90% from top)
+      if (elapsed < 50) { // Only set on first frame
+        sceneTracker.style.transformOrigin = '32% 90%';
+      }
       
-      sceneTracker.style.transform = `translate(-50%, -50%) scale(${scale})`;
-      sceneTracker.style.left = `${currentLeft}%`;
-      sceneTracker.style.top = `${currentTop}%`;
-      sceneTracker.style.opacity = '1'; // Stay fully opaque
+      const scale = 1 + eased * (maxScale - 1);
+      
+      // Keep it in the same position, just scale from the origin point
+      sceneTracker.style.transform = `scale(${scale})`;
+      sceneTracker.style.opacity = '1';
     }
     
     // Transform viewport for depth
@@ -1355,23 +1357,49 @@ function transitionToChute() {
     
     renderer.render(scene, camera);
     
-    if (progress < 1) {
-      requestAnimationFrame(animateTransition);
-    } else {
-      // Transition complete
-      console.log('Transition complete - navigating to chute');
+     if (progress < 1) {
+    requestAnimationFrame(animateTransition);
+  } else {
+    // Zoom complete - NOW fade to black before starting chute
+    console.log('Zoom complete - fading to black...');
+    
+    // Create black overlay
+    const blackOverlay = document.createElement('div');
+    blackOverlay.style.position = 'fixed';
+    blackOverlay.style.top = '0';
+    blackOverlay.style.left = '0';
+    blackOverlay.style.width = '100vw';
+    blackOverlay.style.height = '100vh';
+    blackOverlay.style.backgroundColor = 'black';
+    blackOverlay.style.opacity = '0';
+    blackOverlay.style.transition = 'opacity 1s ease'; // 1 second fade
+    blackOverlay.style.zIndex = '10000';
+    document.body.appendChild(blackOverlay);
+    
+    // Trigger fade
+    setTimeout(() => {
+      blackOverlay.style.opacity = '1';
+    }, 10);
+    
+    // After fade completes, start chute
+    setTimeout(() => {
+      console.log('Fade complete - starting chute');
       
-      // Hide main container and show chute
       const main = document.querySelector("#main-container");
       main.style.display = "none";
       
       const chuteScene = document.getElementById("chute-scene");
       chuteScene.style.display = "block";
       
-      // Start chute experience
+      // Remove overlay so chute is visible
+      blackOverlay.remove();
+      
       startChuteExperience();
-    }
+    }, 1000); // Wait for 1s fade to complete
   }
+}
   
   animateTransition();
 }
+
+
