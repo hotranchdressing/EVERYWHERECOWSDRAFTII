@@ -679,7 +679,489 @@ const sceneConfigs = [
       },
     
     ]
-  }
+  },
+  {
+    id: 6,
+    name: "6",
+    viewportBackground: 'images/backgrounds/background6.jpg',
+    outerBackground: '#fcfeff',
+    products: [{ 
+        x: 0, y: 6, 
+        imageWidth: 700,
+        imageHeight: 400,
+        scale: 8,
+        productName: "Acrylic Paint: Tallow-Modified Emulsifier",
+        imageUrl: 'images/colors/acrylicpaint.png',
+        maskUrl: 'images/colors/acrylicpaintmask.png'
+      },
+      { 
+        x: 9, y: -6.5, 
+        imageWidth: 300,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Ballpoint Pen Ink: Tallow-Based Carriers",
+        imageUrl: 'images/colors/ballpointpen.png',
+        maskUrl: 'images/colors/ballpointpenmask.png'
+      },
+      { 
+        x: 0, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Colored Pencils: Tallow Binders",
+        imageUrl: 'images/colors/coloredpencils.png',
+        maskUrl: 'images/colors/coloredpencilsmask.png'
+      },
+      { 
+        x: -6, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 12,
+        productName: "Crayons: Tallow",
+        imageUrl: 'images/colors/crayons.png',
+        maskUrl: 'images/colors/crayonsmask.png'
+      },
+      { 
+        x: 5, y: -1, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 7,
+        productName: "Enamel Paint: Tallow-Modified Resins",
+        imageUrl: 'images/colors/enamelpaint.png',
+        maskUrl: 'images/colors/enamelpaintmask.png'
+      },
+      { 
+        x: 0, y: 0, 
+        imageWidth: 800,
+        imageHeight: 1000,
+        scale: 7,
+        productName: "Fabric Dye: Tallow Based Mordant Carrier",
+        imageUrl: 'images/colors/fabricdye.png',
+        maskUrl: 'images/colors/fabricdyemask.png'
+      },
+      { 
+        x: 10, y: 8, 
+        imageWidth: 600,
+        imageHeight: 400,
+        scale: 12,
+        productName: "House Paint: Tallow Fatty Acids",
+        imageUrl: 'images/colors/housepaint.png',
+        maskUrl: 'images/colors/housepaintmask.png'
+      },
+      { 
+        x: -8, y: 5, 
+        imageWidth: 800,
+        imageHeight: 500,
+        scale: 12,
+        productName: "Marker: Tallow Based Solvent Carrier",
+        imageUrl: 'images/colors/marker.png',
+        maskUrl: 'images/colors/markermask.png'
+      },
+      { 
+        x: 4, y: -6, 
+        imageWidth: 700,
+        imageHeight: 700,
+        scale: 7,
+        productName: "Printer Ink: Soy-Tallow Blends",
+        imageUrl: 'images/colors/printerink.png',
+        maskUrl: 'images/colors/printerinkmask.png'
+      },
+    { 
+        x: -10, y: 8, 
+        imageWidth: 500,
+        imageHeight: 400,
+        scale: 8,
+        productName: "Tattoo Ink: Tallow-Based Suspension Medium",
+        imageUrl: 'images/colors/tattooink.png',
+        maskUrl: 'images/colors/tattooinkmask.png'
+      },
+      { 
+        x: 10, y: 2, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Watercolor Paint (Binder): Gelatin, Collagen",
+        imageUrl: 'images/colors/watercolorpaint.png',
+        maskUrl: 'images/colors/watercolorpaintmask.png'
+      },
+      { 
+        x: -12, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Wood Stain: Tallow-Modified Oil Carrier",
+        imageUrl: 'images/colors/woodstain.png',
+        maskUrl: 'images/colors/woodstainmask.png'
+      }
+    
+    ]},{
+    id: 8,
+    name: "8",
+    viewportBackground: 'images/backgrounds/background7.jpg',
+    outerBackground: '#fcfeff',
+    products: [{ 
+        x: 0, y: 6, 
+        imageWidth: 400,
+        imageHeight: 700,
+        scale: 14,
+        productName: "Bottle Label Adhesive: Casein",
+        imageUrl: 'images/glue/bottlelabelglue.png',
+        maskUrl: 'images/glue/bottlelabelgluemask.png'
+      },
+      { 
+        x: 9, y: -6, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 14,
+        productName: "Drum Head Adhesive: Hide Glue",
+        imageUrl: 'images/glue/drumhead.png',
+        maskUrl: 'images/glue/drumheadmask.png'
+      },
+      { 
+        x: 0, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 14,
+        productName: "Envelope Sealing Gum: Gelatin, Collagen",
+        imageUrl: 'images/glue/envelopeglue.png',
+        maskUrl: 'images/glue/envelopegluemask.png'
+      },
+      { 
+        x: -10, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 12,
+        productName: "Fabric Glue: Gelatin, Collagen",
+        imageUrl: 'images/glue/fabricglue.png',
+        maskUrl: 'images/glue/fabricgluemask.png'
+      },
+      { 
+        x: -2, y: 8, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 8,
+        productName: "Gesso Adhesive (Paint Primer): Gelatin (Pigment Binder)",
+        imageUrl: 'images/glue/gessoadhesive.png',
+        maskUrl: 'images/glue/gessoadhesivemask.png'
+      },
+      { 
+        x: -5, y: 4, 
+        imageWidth: 800,
+        imageHeight: 1000,
+        scale: 12,
+        productName: "Specialty Wood Glues (Luthier): Hide Glue",
+        imageUrl: 'images/glue/hideglue.png',
+        maskUrl: 'images/glue/hidegluemask.png'
+      },
+      { 
+        x: 5, y: 6, 
+        imageWidth: 600,
+        imageHeight: 500,
+        scale: 9,
+        productName: "Wallpaper Paste: Gelatin, Collagen",
+        imageUrl: 'images/glue/wallpaperpaste.png',
+        maskUrl: 'images/glue/wallpaperpastemask.png'
+      },
+      
+    ]},
+
+      {
+    id: 7,
+    name: "7",
+    viewportBackground: 'images/backgrounds/background8.jpg',
+    outerBackground: '#fcfeff',
+    products: [{ 
+        x: 0, y: 6, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 8,
+        productName: "Milk Replacer (Calves): Colostrum, Bovine Blood Plasma",
+        imageUrl: 'images/animalfood/calf.png',
+        maskUrl: 'images/animalfood/calfmask.png'
+      },
+      { 
+        x: 9, y: -3, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Cat Food: Beef Meal",
+        imageUrl: 'images/animalfood/cat.png',
+        maskUrl: 'images/animalfood/catmask.png'
+      },
+      { 
+        x: 0, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Poultry Feed: Blood Meal",
+        imageUrl: 'images/animalfood/chicken.png',
+        maskUrl: 'images/animalfood/chickenmask.png'
+      },
+      { 
+        x: -6, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 12,
+        productName: "Dog Food: Beef Meal",
+        imageUrl: 'images/animalfood/dogs.png',
+        maskUrl: 'images/animalfood/dogsmask.png'
+      },
+      { 
+        x: 5, y: -1, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 7,
+        productName: "Horse Feed Supplement: Beef Protein Isolate",
+        imageUrl: 'images/animalfood/horses.png',
+        maskUrl: 'images/animalfood/horsesmask.png'
+      },
+      { 
+        x: 4, y: 2, 
+        imageWidth: 1000,
+        imageHeight: 1000,
+        scale: 7,
+        productName: "Zoo Carnivore Diet: Whole Beef Carcass Parts",
+        imageUrl: 'images/animalfood/lion.png',
+        maskUrl: 'images/animalfood/lionmask.png'
+      },
+      { 
+        x: 10, y: 5, 
+        imageWidth: 600,
+        imageHeight: 400,
+        scale: 12,
+        productName: "Mink Feed (Fur Farming): Beef Byproducts",
+        imageUrl: 'images/animalfood/mink.png',
+        maskUrl: 'images/animalfood/minkmask.png'
+      },
+      { 
+        x: -8, y: 5, 
+        imageWidth: 800,
+        imageHeight: 700,
+        scale: 6,
+        productName: "Reptile Food (Carnivorous): Beef Heart, Liver",
+        imageUrl: 'images/animalfood/monitorlizard.png',
+        maskUrl: 'images/animalfood/monitorlizardmask.png'
+      },
+      { 
+        x: 4, y: -6, 
+        imageWidth: 900,
+        imageHeight: 700,
+        scale: 7,
+        productName: "Swine Feed: Bone Meal, Blood Meal",
+        imageUrl: 'images/animalfood/pigs.png',
+        maskUrl: 'images/animalfood/pigsmask.png'
+      },
+    { 
+        x: -10, y: 2, 
+        imageWidth: 800,
+        imageHeight: 400,
+        scale: 8,
+        productName: "Salmon Feed (Fish Farming): Tallow",
+        imageUrl: 'images/animalfood/salmon.png',
+        maskUrl: 'images/animalfood/salmonmask.png'
+      }
+    ]},
+
+    {
+    id: 9,
+    name: "9",
+    viewportBackground: 'images/backgrounds/background9.jpg',
+    outerBackground: '#fcfeff',
+    products: [{ 
+        x: 0, y: 6, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 8,
+        productName: "Bicycle Saddle: Hide",
+        imageUrl: 'images/upholstery/bicyclesaddle.png',
+        maskUrl: 'images/upholstery/bicyclesaddlemask.png'
+      },
+      { 
+        x: 12, y: 0, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Booth: Hide",
+        imageUrl: 'images/upholstery/booth.png',
+        maskUrl: 'images/upholstery/boothmask.png'
+      },
+      { 
+        x: 0, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Chair: Hide",
+        imageUrl: 'images/upholstery/chair.png',
+        maskUrl: 'images/upholstery/chairmask.png'
+      },
+      { 
+        x: -13, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 12,
+        productName: "Headboard: Hide",
+        imageUrl: 'images/upholstery/headboard.png',
+        maskUrl: 'images/upholstery/headboardmask.png'
+      },
+    ]},
+
+    {
+    id: 10,
+    name: "10",
+    viewportBackground: 'images/backgrounds/background10.jpg',
+    outerBackground: '#fcfeff',
+    products: [{ 
+        x: 0, y: 6, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 8,
+        productName: "Belt: Hide",
+        imageUrl: 'images/clothing/belt.png',
+        maskUrl: 'images/clothing/beltmask.png'
+      },
+      { 
+        x: 8, y: -3, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Gloves: Hide",
+        imageUrl: 'images/clothing/gloves.png',
+        maskUrl: 'images/clothing/glovesmask.png'
+      },
+      { 
+        x: -7, y: 7, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Hat: Hide",
+        imageUrl: 'images/clothing/hat.png',
+        maskUrl: 'images/clothing/hatmask.png'
+      },
+      { 
+        x: -13, y: -2, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 12,
+        productName: "Heels: Hide",
+        imageUrl: 'images/clothing/heels.png',
+        maskUrl: 'images/clothing/heelsmask.png'
+      },
+      { 
+        x: -5, y: 0, 
+        imageWidth: 700,
+        imageHeight: 800,
+        scale: 7,
+        productName: "Purse: Hide",
+        imageUrl: 'images/clothing/purse.png',
+        maskUrl: 'images/clothing/pursemask.png'
+      },
+      { 
+        x: 1, y: -8, 
+        imageWidth: 1000,
+        imageHeight: 1000,
+        scale: 7,
+        productName: "Shoes: Hide",
+        imageUrl: 'images/clothing/shoes.png',
+        maskUrl: 'images/clothing/shoesmask.png'
+      },
+      { 
+        x: 0, y: 0, 
+        imageWidth: 400,
+        imageHeight: 400,
+        scale: 2,
+        productName: "Watch Wristband: Hide",
+        imageUrl: 'images/clothing/watch.png',
+        maskUrl: 'images/clothing/watchmask.png'
+      },
+    ]},
+
+   {
+    id: 11,
+    name: "11",
+    viewportBackground: 'images/backgrounds/background11.jpg',
+    outerBackground: '#fcfeff',
+    products: [{ 
+        x: 7, y: 6, 
+        imageWidth: 300,
+        imageHeight: 550,
+        scale: 5,
+        productName: "Beer: Gelatin (Fining Agent)",
+        imageUrl: 'images/peoplefood/beer.png',
+        maskUrl: 'images/peoplefood/beermask.png'
+      },
+      { 
+        x: 9, y: -3, 
+        imageWidth: 600,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Candy Corn: Gelatin",
+        imageUrl: 'images/peoplefood/candycorn.png',
+        maskUrl: 'images/peoplefood/candycornmask.png'
+      },
+      { 
+        x: -2, y: -6, 
+        imageWidth: 900,
+        imageHeight: 600,
+        scale: 8,
+        productName: "Cheese: Dairy, Rennet",
+        imageUrl: 'images/peoplefood/cheees.png',
+        maskUrl: 'images/peoplefood/cheeesmask.png'
+      },
+      { 
+        x: -6, y: -2, 
+        imageWidth: 800,
+        imageHeight: 600,
+        scale: 7,
+        productName: "Gummies: Gelatin",
+        imageUrl: 'images/peoplefood/gummies.png',
+        maskUrl: 'images/peoplefood/gummiesmask.png'
+      },
+      { 
+        x: 3, y: -1, 
+        imageWidth: 1000,
+        imageHeight: 800,
+        scale: 7,
+        productName: "Jello: Gelatin",
+        imageUrl: 'images/peoplefood/jello.png',
+        maskUrl: 'images/peoplefood/jellomask.png'
+      },
+      { 
+        x: 13, y: 7, 
+        imageWidth: 1000,
+        imageHeight: 1000,
+        scale: 7,
+        productName: "Marshmallows: Gelatin",
+        imageUrl: 'images/peoplefood/marshmallow.png',
+        maskUrl: 'images/peoplefood/marshmallowmask.png'
+      },
+      { 
+        x: 0, y: 6, 
+        imageWidth: 400,
+        imageHeight: 400,
+        scale: 10,
+        productName: "Beef: Beef",
+        imageUrl: 'images/peoplefood/steak.png',
+        maskUrl: 'images/peoplefood/steakmask.png'
+      },
+      { 
+        x: -8, y: 3, 
+        imageWidth: 800,
+        imageHeight: 900,
+        scale: 6,
+        productName: "White Sugar: Bone Char (Filter Aid)",
+        imageUrl: 'images/peoplefood/whitesugar.png',
+        maskUrl: 'images/peoplefood/whitesugarmask.png'
+      },
+      { 
+        x: -14, y: -6, 
+        imageWidth: 600,
+        imageHeight: 700,
+        scale: 7,
+        productName: "Wine: Gelatin (Fining Agent)",
+        imageUrl: 'images/peoplefood/wine.png',
+        maskUrl: 'images/peoplefood/winemask.png'
+      },
+    ]},
 ];
 
 const galleryContainer = document.getElementById("product-gallery");
